@@ -1,2 +1,13 @@
 
 /* Your CSS Code here. */
+/*tr:hover {
+background-color: orange;
+}
+agre aese likhte to hover kaam ni krta
+The reason the hover effect is not working in your case is due to the specificity of CSS selectors. The id selector (#first, #second, etc.) has higher specificity than the pseudo-class selector (:hover). Therefore, the background color assigned by the id selector is taking precedence over the color assigned by the hover effect.
+
+To fix this, you can increase the specificity of the hover effect by including the id selectors. Here’s how you can do it:
+
+#first:hover, #second:hover, #third:hover, #fourth:hover {
+    background-color: orange;
+}
